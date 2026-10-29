@@ -24,14 +24,14 @@ Phần này xác định hệ thống phải cung cấp chức năng gì, ai tư
 
 #### 1.2.1. Nguyên tắc INVEST
 
-| Tiêu chí | Ý nghĩa | 
-| --- | --- | --- |
-| **I – Independent (Độc lập)** | Mỗi User Story nên có mục tiêu riêng, giảm phụ thuộc không cần thiết. | 
-| **N – Negotiable (Có thể thương lượng)** | Có thể trao đổi cách thực hiện, miễn đáp ứng giá trị cốt lõi. |
-| **V – Valuable (Có giá trị)** | Story mang lại kết quả hữu ích cho một tác nhân. | 
-| **E – Estimable (Có thể ước lượng)** | Đầu vào, đầu ra, quyền hạn và ngoại lệ đủ rõ để dự kiến công sức. | 
-| **S – Small (Đủ nhỏ)** | Story mô tả một khả năng chính, không ôm nhiều chức năng độc lập. | 
-| **T – Testable (Có thể kiểm thử)** | Có các tiêu chí chấp nhận quan sát và kiểm chứng được. | 
+| Tiêu chí | Ý nghĩa |
+| --- | --- |
+| **I – Independent (Độc lập)** | User Story có mục tiêu riêng và hạn chế phụ thuộc vào các Story khác để thuận tiện sắp xếp ưu tiên và triển khai. |
+| **N – Negotiable (Có thể thương lượng)** | Nội dung chi tiết và cách thực hiện có thể được trao đổi, điều chỉnh giữa các bên, miễn vẫn đáp ứng nhu cầu của người dùng. |
+| **V – Valuable (Có giá trị)** | User Story mang lại lợi ích rõ ràng cho người dùng hoặc bên liên quan. |
+| **E – Estimable (Có thể ước lượng)** | Mục tiêu, phạm vi và điều kiện xử lý đủ rõ để nhóm phát triển ước lượng công sức thực hiện. |
+| **S – Small (Đủ nhỏ)** | User Story có phạm vi vừa đủ để hoàn thành trong một vòng lặp phát triển; Story quá lớn cần được chia nhỏ. |
+| **T – Testable (Có thể kiểm thử)** | User Story có tiêu chí chấp nhận cụ thể để kiểm tra và xác định đã đáp ứng yêu cầu hay chưa. |
 
 #### 1.2.2. Danh sách User Stories
 
@@ -157,11 +157,8 @@ Phần này xác định hệ thống phải cung cấp chức năng gì, ai tư
 | **Organizer (Ban tổ chức)** | Tạo/chỉnh sửa/công bố concert, quản lý suất diễn, khu vực, sơ đồ ghế, đợt bán và giá. |
 | **Administrator (Quản trị viên)** | Quản lý tài khoản, cấp quyền Organizer, kích hoạt/vô hiệu hóa tài khoản. |
 
-**Lưu ý:** Guest là trạng thái truy cập chưa đăng nhập, không nhất thiết là một role được lưu trong cơ sở dữ liệu. Không có Actor Check-in Staff trong thiết kế này.
 
 #### 1.3.2. Sơ đồ Use Case tổng quan
-
-Sơ đồ sau chỉ minh họa **nhóm chức năng theo tác nhân** để đối chiếu. Khi vẽ Use Case Diagram UML bằng draw.io, hãy biểu diễn từng UC bằng hình ellipse trong System Boundary và nối với Actor tương ứng; không xem các ô nhóm dưới đây là một sơ đồ UML hoàn chỉnh.
 
 ```mermaid
 flowchart LR
