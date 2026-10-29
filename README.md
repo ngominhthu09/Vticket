@@ -24,14 +24,14 @@ Phần này xác định hệ thống phải cung cấp chức năng gì, ai tư
 
 #### 1.2.1. Nguyên tắc INVEST
 
-| Tiêu chí | Ý nghĩa | Áp dụng trong VTicket |
+| Tiêu chí | Ý nghĩa | 
 | --- | --- | --- |
-| **I – Independent (Độc lập)** | Mỗi User Story nên có mục tiêu riêng, giảm phụ thuộc không cần thiết. | Tách chọn ghế, giữ vé, thanh toán và xem vé điện tử thành những Story riêng. |
-| **N – Negotiable (Có thể thương lượng)** | Có thể trao đổi cách thực hiện, miễn đáp ứng giá trị cốt lõi. | Có thể thay đổi cách hiển thị sơ đồ ghế; không thay đổi yêu cầu chống đặt trùng ghế. |
-| **V – Valuable (Có giá trị)** | Story mang lại kết quả hữu ích cho một tác nhân. | Khách chọn đúng chỗ; Organizer phân phối vé phù hợp với sức chứa. |
-| **E – Estimable (Có thể ước lượng)** | Đầu vào, đầu ra, quyền hạn và ngoại lệ đủ rõ để dự kiến công sức. | Phân biệt khu đứng/khu ngồi, hạn mức đợt bán, trạng thái chỗ và lỗi thanh toán. |
-| **S – Small (Đủ nhỏ)** | Story mô tả một khả năng chính, không ôm nhiều chức năng độc lập. | Tạo concert, cấu hình ghế và công bố concert là những Story khác nhau. |
-| **T – Testable (Có thể kiểm thử)** | Có các tiêu chí chấp nhận quan sát và kiểm chứng được. | Kiểm tra ghế bị đặt trùng, quá sức chứa, hết hạn giữ, truy cập khác Organizer. |
+| **I – Independent (Độc lập)** | Mỗi User Story nên có mục tiêu riêng, giảm phụ thuộc không cần thiết. | 
+| **N – Negotiable (Có thể thương lượng)** | Có thể trao đổi cách thực hiện, miễn đáp ứng giá trị cốt lõi. |
+| **V – Valuable (Có giá trị)** | Story mang lại kết quả hữu ích cho một tác nhân. | 
+| **E – Estimable (Có thể ước lượng)** | Đầu vào, đầu ra, quyền hạn và ngoại lệ đủ rõ để dự kiến công sức. | 
+| **S – Small (Đủ nhỏ)** | Story mô tả một khả năng chính, không ôm nhiều chức năng độc lập. | 
+| **T – Testable (Có thể kiểm thử)** | Có các tiêu chí chấp nhận quan sát và kiểm chứng được. | 
 
 #### 1.2.2. Danh sách User Stories
 
