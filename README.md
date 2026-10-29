@@ -8,55 +8,7 @@ Phần này xác định hệ thống phải cung cấp chức năng gì, ai tư
 
 ### 1.1. Product Mind Map
 
-```mermaid
-mindmap
-  root((VTicket))
-    Khám phá concert
-      Xem danh sách concert
-      Tìm kiếm và lọc concert
-      Xem chi tiết concert
-    Tài khoản và hồ sơ
-      Đăng ký tài khoản khách hàng
-      Đăng nhập và đăng xuất
-      Quản lý hồ sơ cá nhân
-    Đặt vé
-      Chọn suất diễn
-      Chọn khu vực và vé
-        Khu đứng: chọn số lượng vé
-        Khu ngồi: chọn ghế trên sơ đồ
-      Kiểm tra số lượng vé còn
-      Giữ vé tạm thời
-      Hủy giữ vé tạm thời
-      Thanh toán
-    Đơn hàng và vé điện tử
-      Xem danh sách đơn hàng
-      Xem chi tiết đơn hàng
-      Xem thông tin vé
-      Xem danh sách vé đã mua
-    Quản lý concert
-      Quản lý thông tin concert
-        Tạo concert
-        Chỉnh sửa concert
-        Công bố concert
-      Quản lý suất diễn
-        Tạo suất diễn
-        Chỉnh sửa thời gian và địa điểm
-      Quản lý khu vực và sơ đồ
-        Thiết lập khu đứng
-        Thiết lập khu ngồi
-        Cấu hình sơ đồ ghế
-      Quản lý đợt mở bán
-        Tạo đợt bán
-        Thiết lập thời gian
-        Thiết lập số vé cho từng đợt
-      Thiết lập giá vé
-    Quản trị hệ thống
-      Quản lý tài khoản người dùng
-      Quản lý tài khoản Organizer
-      Kích hoạt và vô hiệu hóa tài khoản
-```
-
-Sơ đồ trên chuẩn hóa nội dung từ XMind và bổ sung ba nghiệp vụ: chọn suất diễn (US08), giữ vé tạm thời (US12), thiết lập giá vé (US30).
+![Mind Map](./docs/mindmap.png)
 
 | Nhóm nghiệp vụ | Mô tả |
 | --- | --- |
@@ -83,45 +35,42 @@ Sơ đồ trên chuẩn hóa nội dung từ XMind và bổ sung ba nghiệp v�
 
 #### 1.2.2. Danh sách User Stories
 
-Cú pháp: **Là [tác nhân], tôi muốn [mục tiêu] để [giá trị nhận được].** Mã AC và UC sử dụng cùng số thứ tự với US để dễ truy vết.
+| ID | Tác nhân | User Story |
+| --- | --- | --- |
+| **US01** | Guest / Customer | Tôi muốn xem danh sách concert công khai để khám phá sự kiện phù hợp. |
+| **US02** | Guest / Customer | Tôi muốn tìm kiếm và lọc concert để nhanh chóng tìm sự kiện mong muốn. |
+| **US03** | Guest / Customer | Tôi muốn xem chi tiết concert và các suất diễn để lựa chọn sự kiện phù hợp. |
+| **US04** | Guest | Tôi muốn đăng ký tài khoản khách hàng để có thể đặt vé. |
+| **US05** | Người có tài khoản | Tôi muốn đăng nhập để sử dụng các chức năng được cấp quyền. |
+| **US06** | Người đã đăng nhập | Tôi muốn đăng xuất để kết thúc phiên truy cập trên thiết bị. |
+| **US07** | Người đã đăng nhập | Tôi muốn cập nhật hồ sơ cá nhân để giữ thông tin liên hệ chính xác. |
+| **US08** | Customer | Tôi muốn chọn một suất diễn để đặt đúng ngày và giờ tham dự. |
+| **US09** | Customer | Tôi muốn chọn số lượng vé ở khu đứng để đặt chỗ cho nhóm của mình. |
+| **US10** | Customer | Tôi muốn chọn ghế trên sơ đồ khu ngồi để biết chính xác vị trí tham dự. |
+| **US11** | Customer | Tôi muốn xem số vé/ghế còn khả dụng trước khi đặt để tránh chọn chỗ đã hết. |
+| **US12** | Customer | Tôi muốn giữ tạm những chỗ đã chọn để có thời gian thanh toán. |
+| **US13** | Customer | Tôi muốn hủy lượt giữ vé chưa thanh toán để giải phóng chỗ không mua nữa. |
+| **US14** | Customer | Tôi muốn thanh toán để hoàn tất đặt vé và nhận xác nhận đơn hàng. |
+| **US15** | Customer | Tôi muốn xem danh sách đơn hàng để theo dõi các lần đặt vé. |
+| **US16** | Customer | Tôi muốn xem chi tiết đơn hàng để kiểm tra số lượng, giá và trạng thái thanh toán. |
+| **US17** | Customer | Tôi muốn xem danh sách vé đã mua để tìm được vé của mình. |
+| **US18** | Customer | Tôi muốn xem thông tin từng vé để biết suất diễn, khu vực và vị trí ghế nếu có. |
+| **US19** | Organizer | Tôi muốn tạo concert ở trạng thái nháp để chuẩn bị thông tin sự kiện. |
+| **US20** | Organizer | Tôi muốn chỉnh sửa thông tin concert của mình để bảo đảm nội dung chính xác. |
+| **US21** | Organizer | Tôi muốn công bố concert khi đã cấu hình hợp lệ để khách hàng có thể xem và đặt vé. |
+| **US22** | Organizer | Tôi muốn tạo suất diễn để xác định thời gian biểu diễn và phân phối vé riêng cho từng suất. |
+| **US23** | Organizer | Tôi muốn chỉnh sửa thời gian và địa điểm suất diễn chưa phát sinh giao dịch để cập nhật lịch trình. |
+| **US24** | Organizer | Tôi muốn thiết lập khu đứng và sức chứa để kiểm soát lượng vé được bán. |
+| **US25** | Organizer | Tôi muốn thiết lập khu ngồi để phân chia chỗ tham dự có đánh số. |
+| **US26** | Organizer | Tôi muốn cấu hình sơ đồ ghế để khách có thể chọn từng ghế cụ thể. |
+| **US27** | Organizer | Tôi muốn tạo đợt mở bán để phân chia kế hoạch bán vé. |
+| **US28** | Organizer | Tôi muốn thiết lập thời gian cho từng đợt để giới hạn thời điểm đặt vé. |
+| **US29** | Organizer | Tôi muốn thiết lập số vé phân bổ cho từng đợt để kiểm soát hạn mức bán. |
+| **US30** | Organizer | Tôi muốn thiết lập giá vé theo khu vực/đợt bán để người mua biết số tiền phải trả. |
+| **US31** | Administrator | Tôi muốn quản lý các tài khoản người dùng để kiểm soát người truy cập nền tảng. |
+| **US32** | Administrator | Tôi muốn quản lý tài khoản Organizer để xác định ai có quyền tổ chức concert. |
+| **US33** | Administrator | Tôi muốn kích hoạt hoặc vô hiệu hóa tài khoản để kiểm soát quyền sử dụng hệ thống. |
 
-| ID | Tác nhân | User Story | AC / UC |
-| --- | --- | --- | --- |
-| **US01** | Guest / Customer | Tôi muốn xem danh sách concert công khai để khám phá sự kiện phù hợp. | AC01 / UC01 |
-| **US02** | Guest / Customer | Tôi muốn tìm kiếm và lọc concert để nhanh chóng tìm sự kiện mong muốn. | AC02 / UC02 |
-| **US03** | Guest / Customer | Tôi muốn xem chi tiết concert và các suất diễn để lựa chọn sự kiện phù hợp. | AC03 / UC03 |
-| **US04** | Guest | Tôi muốn đăng ký tài khoản khách hàng để có thể đặt vé. | AC04 / UC04 |
-| **US05** | Người có tài khoản | Tôi muốn đăng nhập để sử dụng các chức năng được cấp quyền. | AC05 / UC05 |
-| **US06** | Người đã đăng nhập | Tôi muốn đăng xuất để kết thúc phiên truy cập trên thiết bị. | AC06 / UC06 |
-| **US07** | Người đã đăng nhập | Tôi muốn cập nhật hồ sơ cá nhân để giữ thông tin liên hệ chính xác. | AC07 / UC07 |
-| **US08** | Customer | Tôi muốn chọn một suất diễn để đặt đúng ngày và giờ tham dự. | AC08 / UC08 |
-| **US09** | Customer | Tôi muốn chọn số lượng vé ở khu đứng để đặt chỗ cho nhóm của mình. | AC09 / UC09 |
-| **US10** | Customer | Tôi muốn chọn ghế trên sơ đồ khu ngồi để biết chính xác vị trí tham dự. | AC10 / UC10 |
-| **US11** | Customer | Tôi muốn xem số vé/ghế còn khả dụng trước khi đặt để tránh chọn chỗ đã hết. | AC11 / UC11 |
-| **US12** | Customer | Tôi muốn giữ tạm những chỗ đã chọn để có thời gian thanh toán. | AC12 / UC12 |
-| **US13** | Customer | Tôi muốn hủy lượt giữ vé chưa thanh toán để giải phóng chỗ không mua nữa. | AC13 / UC13 |
-| **US14** | Customer | Tôi muốn thanh toán để hoàn tất đặt vé và nhận xác nhận đơn hàng. | AC14 / UC14 |
-| **US15** | Customer | Tôi muốn xem danh sách đơn hàng để theo dõi các lần đặt vé. | AC15 / UC15 |
-| **US16** | Customer | Tôi muốn xem chi tiết đơn hàng để kiểm tra số lượng, giá và trạng thái thanh toán. | AC16 / UC16 |
-| **US17** | Customer | Tôi muốn xem danh sách vé đã mua để tìm được vé của mình. | AC17 / UC17 |
-| **US18** | Customer | Tôi muốn xem thông tin từng vé để biết suất diễn, khu vực và vị trí ghế nếu có. | AC18 / UC18 |
-| **US19** | Organizer | Tôi muốn tạo concert ở trạng thái nháp để chuẩn bị thông tin sự kiện. | AC19 / UC19 |
-| **US20** | Organizer | Tôi muốn chỉnh sửa thông tin concert của mình để bảo đảm nội dung chính xác. | AC20 / UC20 |
-| **US21** | Organizer | Tôi muốn công bố concert khi đã cấu hình hợp lệ để khách hàng có thể xem và đặt vé. | AC21 / UC21 |
-| **US22** | Organizer | Tôi muốn tạo suất diễn để xác định thời gian biểu diễn và phân phối vé riêng cho từng suất. | AC22 / UC22 |
-| **US23** | Organizer | Tôi muốn chỉnh sửa thời gian và địa điểm suất diễn chưa phát sinh giao dịch để cập nhật lịch trình. | AC23 / UC23 |
-| **US24** | Organizer | Tôi muốn thiết lập khu đứng và sức chứa để kiểm soát lượng vé được bán. | AC24 / UC24 |
-| **US25** | Organizer | Tôi muốn thiết lập khu ngồi để phân chia chỗ tham dự có đánh số. | AC25 / UC25 |
-| **US26** | Organizer | Tôi muốn cấu hình sơ đồ ghế để khách có thể chọn từng ghế cụ thể. | AC26 / UC26 |
-| **US27** | Organizer | Tôi muốn tạo đợt mở bán để phân chia kế hoạch bán vé. | AC27 / UC27 |
-| **US28** | Organizer | Tôi muốn thiết lập thời gian cho từng đợt để giới hạn thời điểm đặt vé. | AC28 / UC28 |
-| **US29** | Organizer | Tôi muốn thiết lập số vé phân bổ cho từng đợt để kiểm soát hạn mức bán. | AC29 / UC29 |
-| **US30** | Organizer | Tôi muốn thiết lập giá vé theo khu vực/đợt bán để người mua biết số tiền phải trả. | AC30 / UC30 |
-| **US31** | Administrator | Tôi muốn quản lý các tài khoản người dùng để kiểm soát người truy cập nền tảng. | AC31 / UC31 |
-| **US32** | Administrator | Tôi muốn quản lý tài khoản Organizer để xác định ai có quyền tổ chức concert. | AC32 / UC32 |
-| **US33** | Administrator | Tôi muốn kích hoạt hoặc vô hiệu hóa tài khoản để kiểm soát quyền sử dụng hệ thống. | AC33 / UC33 |
-
-> **Liên hệ với XMind:** US08 (chọn suất diễn), US12 (giữ vé tạm thời) và US30 (thiết lập giá vé) là ba nghiệp vụ đề xuất bổ sung để hoàn thiện quy trình đặt vé; sơ đồ gốc chưa thể hiện chúng thành các nhánh riêng. Các Story còn lại xuất phát từ chức năng trên sơ đồ. US31/US32 được phân biệt theo phạm vi: quản lý hồ sơ/tìm kiếm tài khoản nói chung và quản lý cấp quyền Organizer nói riêng.
 
 #### 1.2.3. Rà soát tính INVEST của các nhóm Story
 
@@ -135,8 +84,6 @@ Cú pháp: **Là [tác nhân], tôi muốn [mục tiêu] để [giá trị nhậ
 | **US19–US26** Concert/suất/khu | Cần quyền Organizer; công bố cần cấu hình hợp lệ | Form tạo, cách vẽ sơ đồ ghế | Tổ chức bán vé theo chỗ | Tách tạo/sửa/công bố và từng loại khu | Dữ liệu sai, sửa trái quyền, phá vỡ ghế đã bán |
 | **US27–US30** Đợt mở bán | Cần suất, khu và số lượng phù hợp | Tên đợt, bố cục lịch mở bán | Phân phối vé theo từng thời điểm | Chia tạo đợt, thời gian, hạn mức, giá | Ngoài giờ, vượt hạn mức, giá sai |
 | **US31–US33** Quản trị | Cần Admin đăng nhập | Giao diện danh sách/form quản lý | Kiểm soát truy cập | Tách quản lý người dùng, cấp quyền Organizer, trạng thái | Người không phải Admin bị từ chối |
-
-**Ghi chú:** INVEST là tiêu chí rà soát yêu cầu, không phải kết luận các chức năng đã lập trình xong. Những điểm chưa có con số rõ trong Mind Map (thời hạn giữ, giới hạn vé mỗi lần, chính sách giá) được nêu thành giả định thiết kế ở bảng quy tắc dưới đây và có thể tiếp tục thống nhất với mentor.
 
 #### 1.2.4. Quy tắc nghiệp vụ (Business Rules)
 
@@ -352,56 +299,11 @@ Ký hiệu: **✓** = được phép, **—** = không được phép, **Của m
 
 ## 2. Kiến trúc thông tin và phân cấp màn hình
 
-Phần này xác định cấu trúc các trang, nội dung từng khối giao diện và luồng điều hướng. Mã P01–P24 được dùng thống nhất trong Sitemap, mô tả trang và danh mục màn hình; wireframe và thiết kế giao diện trực quan chưa thuộc phạm vi tài liệu này.
-
 ### 2.1. Kiến trúc thông tin (Information Architecture)
 
-#### 2.1.1. Cây phân cấp Page (Sitemap)
-
-```text
-VTicket
-├── Khu vực công khai
-│   ├── P01 Trang chủ
-│   │   └── P02 Danh sách và tìm kiếm concert
-│   │       └── P03 Chi tiết concert
-│   │           └── Tham chiếu P06 ở khu vực Customer (cần đăng nhập Customer)
-│   ├── P04 Đăng nhập
-│   │   └── P05 Đăng ký khách hàng
-│
-├── Khu vực Customer
-│   ├── P06 Chọn suất diễn, khu vực và vé
-│   │   └── P07 Xác nhận đặt vé và thanh toán
-│   │       └── P08 Kết quả thanh toán
-│   ├── P09 Đơn hàng của tôi
-│   │   └── P10 Chi tiết đơn hàng
-│   │       └── P12 Chi tiết vé điện tử
-│   └── P11 Vé của tôi
-│       └── Tham chiếu P12 ở nhánh Chi tiết đơn hàng
-│
-├── Khu vực tài khoản đã đăng nhập
-│   └── P13 Hồ sơ cá nhân
-│
-├── Khu vực Organizer
-│   └── P14 Danh sách concert của Organizer
-│       ├── P15 Tạo/chỉnh sửa concert
-│       └── P16 Tổng quan và công bố concert
-│           ├── P17 Quản lý các suất diễn
-│           │   └── P18 Chỉnh sửa suất diễn
-│           ├── P19 Quản lý khu vực đứng và khu ngồi
-│           │   └── P20 Cấu hình sơ đồ ghế
-│           ├── P21 Quản lý đợt mở bán
-│           └── P22 Thiết lập giá vé
-│
-├── Khu vực Administrator
-│   └── P23 Quản trị tài khoản
-│
-└── Trang hệ thống
-    └── P24 Không có quyền truy cập (403)
-```
+#### 2.1.1. Cây phân cấp Page
 
 ![Sơ đồ Sitemap tham khảo](./docs/sitemap.png)
-
-Ảnh minh họa cấu trúc trang từ bản phác thảo ban đầu; nội dung Section và hành vi đã được cập nhật tại mục 2.1.2 bên dưới.
 
 #### 2.1.2. Nội dung từng Page theo Section
 
@@ -713,17 +615,3 @@ Admin đăng nhập (P04)
       ├── Cấp/thu hồi quyền Organizer
       └── Kích hoạt/vô hiệu hóa tài khoản
   → Hiển thị kết quả và làm mới danh sách
-```
-
-#### 2.2.3. Điều hướng và phân quyền theo vai trò
-
-| Khu vực điều hướng | Guest | Customer | Organizer | Admin |
-| --- | :---: | :---: | :---: | :---: |
-| Trang chủ, danh sách và chi tiết concert | ✓ | ✓ | ✓ | ✓ |
-| Đăng ký khách hàng | ✓ | — | — | — |
-| Chọn/giữ vé, thanh toán | — | ✓ | — | — |
-| Đơn hàng và vé của tôi | — | ✓ | — | — |
-| Hồ sơ và đăng xuất | — | ✓ | ✓ | ✓ |
-| Danh sách/quản lý concert của Organizer | — | — | ✓ (concert của mình) | — |
-| Cấu hình suất/khu/ghế/đợt bán/giá | — | — | ✓ (concert của mình) | — |
-| Quản trị tài khoản | — | — | — | ✓ |
